@@ -1,0 +1,14 @@
+@font-face{
+    font-family: GreatVibes;
+    src: url("./icons/GreatVibes.otf");
+}
+:root{
+    --font-family1:"Brush Script MT", "Brush Script Std", "Lucida Calligraphy", "Lucida Handwriting", "Apple Chancery", cursive;
+    --font-family2:"Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}
+.instruction{
+    font-family: var(--font-family1);
+    margin: 10rem;
+    margin-left: 10rem;
+    font-size: xx-large;
+}

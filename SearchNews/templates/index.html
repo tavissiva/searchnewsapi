@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchNews</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename='icons/search.png') }}" />
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylehome.css') }}">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styleindex.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navitem">
+            <li class="titlebar"><a href="#">SearchNews</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="flexbar">
+                <div class="item1">
+                    <div class="baritem">
+                       <button id="search-button" type="search" >
+                           <form action="/" method="post" role="search" name="searchform" onsubmit="return validateForm()"> 
+                               <input id="input-search" name="searchurl" type="input" placeholder="search">
+                               <img id="search-bar" src="{{url_for('static', filename='icons/searchbar.png')}}" alt="search" title="search">
+                           </form> 
+                       </button>
+                       <div class="recent-search"><p></p>Recent Search</p></div>
+                       <ul class="list">
+                           <li class="inner-list"><img id="trending-bar" src="{{url_for('static', filename='icons/trending.png')}}" alt="trend">
+                            <a href="">today top news</a></li>
+                           <li class="inner-list"><img id="trending-bar" src="{{url_for('static', filename='icons/trending.png')}}" alt="trend">
+                                <a href="">news</a></li>
+                           <li class="inner-list"><img id="trending-bar" src="./static/icons/trending.png" alt="trend">
+                                <a href="">meaning</a></li>
+                       </ul>
+                    </div>
+                </div>
+                <!-- <span class="vertical-line"></span> -->
+                <div class="item2">
+                    <p class="instruction">Search the keyword to get instant news</p>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script>
+    function validateForm() {
+        var x = document.forms["searchform"]["searchurl"].value;
+        if (x == "") {
+            return false;
+        }
+    } 
+</script>
+</html>
