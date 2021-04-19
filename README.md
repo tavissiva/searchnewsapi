@@ -13,8 +13,8 @@ From the [SearchFlash](http://searchflash.herokuapp.com/) Website, user can sear
 
 
 
-# News Search API
+# News Search API  
 
-Searching a keyword in a google using **requests,BeautifulSoup** library in python, it returns the list of URL link. Using one of the link to scrape the web content in a website. After scraping the headline content, Build an api using FLASK-RESTFUL-API which return the responce as a json object contains resource content, content information link further search, source content link,  query all link.
+Searching a keyword in a google using **requests,BeautifulSoup** library in python, it returns the list of URL link. Using one of the link to scrape the web content in a website. After scraping the headline content, Build an api using FLASK-RESTFUL-API which return the responce as a json object contains resource content, content information link further search the source content link and  query all the link.  [News API Service](http://newsapiservice.herokuapp.com/)
 
 
